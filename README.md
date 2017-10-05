@@ -39,11 +39,11 @@ Where `R` means we're connected to some replica node, and `10679` is the port th
 Simply add a line describing your setting to `.psqlrc` under the `Put your strings here.` comment, for example:
 
 ```plpgsql
-/* ORDER  NAME  FORMAT_STRING  DEFAULT_VALUE */
-(1, 'master_or_replica',   '',     'M'),
-(2, 'port',                'port', '5432'),
-(3, 'shardman.my_id',      '@',    NULL),
-(4, 'multimaster.node_id', '@',    NULL)
+/* ORDER  NAME                   FMT_STRING  DEFAULT_VALUE */
+  (1,     'master_or_replica',   '',         'M'),
+  (2,     'port',                'port',     '5432'),
+  (3,     'shardman.my_id',      '@',        NULL),
+  (4,     'multimaster.node_id', '@',        NULL)
 ```
 
 This is how the result might look like:
