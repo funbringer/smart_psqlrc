@@ -46,6 +46,8 @@ Simply add a line describing your setting to `.psqlrc` under the `Put your strin
   (4,     'multimaster.node_id', '@',        NULL)
 ```
 
+By default values are taken from table called `pg_settings` (it's part of the system catalog), but you can add a few more relations using the `UNION` statement.
+
 This is how the result might look like:
 
 ```
