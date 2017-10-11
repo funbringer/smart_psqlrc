@@ -2,14 +2,14 @@
 \set pid 'SELECT pg_backend_pid();'
 \set gdb 'SELECT pg_backend_pid() \\g |pg_debug'
 
--- for beatiful prompt
+-- for beautiful prompt
 select (
 	with
 	preferred_settings as (
 		select * from (
 			values
 				/*
-				 * Put your strings here.
+				 * Put your lines here.
 				 *   format: (position, name, format_string, default_value)
 				 *   format_string:
 				 *     empty string: show only value

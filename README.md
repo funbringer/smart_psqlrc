@@ -36,7 +36,7 @@ Where `R` means we're connected to some replica node, and `10679` is the port th
 
 ### How do I add my favorite setting?
 
-Simply add a line describing your setting to `.psqlrc` under the `Put your strings here.` comment, for example:
+Simply add a line describing your setting to `.psqlrc` under the `Put your lines here.` comment, for example:
 
 ```plpgsql
 /* ORDER  NAME                   FMT_STRING  DEFAULT_VALUE */
